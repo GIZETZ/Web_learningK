@@ -1,0 +1,6 @@
+CREATE TABLE results (
+    id INT AUTO_INCREMENT PRIMARY KEY,  -- Optionnel : une colonne pour un identifiant unique
+    user_id INT NOT NULL,
+    score INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id)  -- Si tu veux établir une relation avec la table users
+);
